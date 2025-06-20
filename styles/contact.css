@@ -1,22 +1,24 @@
 .contact-section {
     height: 100vh;
-    background-color: var(--highlight-color);
+    background-color: var(--main-color);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.contact {
+.contact-left {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 40px;
-    border-radius: 30px;
-    background-color: var(--main-color);
+    border: 1px solid black;
+    flex: 1;
+    margin-left: 100px;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 .contact-form h2 {
     font-size: 50px;
@@ -25,28 +27,61 @@
 
 .input-container {
     position: relative;
-    margin-top: 10px;
-    width: 100%;
+    margin-top: 40px;
+
 }
 .input-container input, textarea {
-    padding: 10px 35px;
-    border-radius: 20px;
-    width: 100%;
-    border: 1px solid black;
+    padding: 10px 15px;
+    width: 500px;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 16px;
+    background-color: var(--main-color);
 }
 .input-container textarea {
-    height: 200px;
+    border-bottom: 1px solid black;
+    border-left: none;
+    border-right: none;
+    border-top: none;
 }
-.input-container i {
-    position: absolute;
-    left: 5px;
-    top: 50%;
-    translate: 50% -50%;
-    font-size: 14px;
-}
-.input-container .message-icon {
-    top: 20px;
-}
+
 .contact-form .submit-btn {
     margin: 10px;
+    width: 500px;
+}
+
+.contact-right {
+    background-color: var(--main-color);
+    height: 100%;
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative
+}
+
+.contact-info-section {
+    position: absolute;
+    background-color: var(--akzent-color);
+    height: 75%;
+    width: 100%;
+
+    left: 100px;
+    top: 15%;
+}
+
+.contact-icon-container {
+    width: 40%;
+    background-color: var(--highlight-color);
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.contact-icon {
+    align-self: flex-end;
+}
+.contact-icon img {
+    height: 30px;
+    width: 30px;
 }
