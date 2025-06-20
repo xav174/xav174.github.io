@@ -45,3 +45,14 @@ leftElement.forEach(element => {
     observer2.observe(element);
 });
 
+//Phone Icon animation 
+
+const image = document.getElementById("js-static-phone-icon");
+
+image.addEventListener("mouseenter", () => {
+    image.src = "phone-icon.gif";
+});
+
+image.addEventListener("mouseleave", () => {
+    image.src = "static-phone-icon.png";
+});
