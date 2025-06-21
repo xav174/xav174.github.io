@@ -1,5 +1,10 @@
-/* media queries für header und here section */
+
 @media screen and (max-width: 1150px) {
+    .project-section {
+        height: 100%;
+        padding: 2rem;
+    }
+    /* timeline start */
     /* fade in von rechts */
     .js-fade-animation-right {
         transform: translateX(200px);
@@ -20,6 +25,7 @@
         transform: translateX(0);
         opacity: 1;
     }
+    /* timeline end */
 }
 @media screen and (max-width: 850px) {
     .right-navbar {

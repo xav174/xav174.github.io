@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 5px solid var(--highlight-color);
 }
 .contact-left {
     display: flex;
