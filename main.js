@@ -19,7 +19,10 @@ const rightElement = document.querySelectorAll(".js-fade-animation-right");
 
 const observer1 = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-        entry.target.classList.toggle('showRight', entry.isIntersecting)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('showRight');
+            observer1.unobserve(entry.target);    
+        }
     });
 }, {
     threshold: 0.3,
@@ -35,7 +38,10 @@ const leftElement = document.querySelectorAll(".js-fade-animation-left");
 
 const observer2 = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-        entry.target.classList.toggle('showLeft', entry.isIntersecting)
+       if (entry.isIntersecting) {
+            entry.target.classList.add('showLeft');
+            observer2.unobserve(entry.target);    
+        }
     });
 }, {
     threshold: 0.3,
