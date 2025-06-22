@@ -4,6 +4,12 @@
         height: 100%;
         padding: 2rem;
     }
+     .about-section {
+        height: 100%;
+    }
+    .timeline-section {
+        padding-bottom: 80px;
+    }
     /* timeline start */
     /* fade in von rechts */
     .js-fade-animation-right {
@@ -73,10 +79,6 @@
 
     .titles {
         font-size: 40px;
-    }
-
-    .about-section {
-        height: 100%;
     }
 
     .contact-section {
