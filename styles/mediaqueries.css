@@ -71,12 +71,32 @@
         font-size: 14px;
     }
 
+    .title-section {
+        font-size: 35px;
+    }
+
     .about-section {
-        height: 155vh;
+        height: 100%;
+    }
+    .project-section-title {
+        font-size: 35px;
     }
 }
 
 @media screen and (max-width: 600px) {
+
+    .name-section {
+        font-size: 20px;
+    }
+    .title-section {
+        font-size: 28px;
+    }
+    .hero-about-section {
+        font-size: 14px;
+    }
+
+
+
     .timeline-section::after {
         left: 31px;
     }
@@ -96,7 +116,10 @@
         border-width: 13px 13px 13px 0;
         border-color: transparent var(--highlight-color) transparent transparent;
     }
-    .about-section {
-        height: 120vh;
+    .timeline-content p {
+        font-size: 14px;
+    }
+    .timeline-content h2 {
+        font-size: 20px;
     }
 }

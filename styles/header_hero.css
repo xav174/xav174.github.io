@@ -102,9 +102,11 @@
 .title-section {
     font-size: 40px;
     font-weight: bold;
+    text-align: center;
 }
 .hero-about-section {
     font-size: 16px;
+    text-align: center;
 }
 .hero-about-section span {
     font-weight: 600;
