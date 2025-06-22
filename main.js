@@ -62,3 +62,18 @@ image.addEventListener("mouseenter", () => {
 image.addEventListener("mouseleave", () => {
     image.src = "static-phone-icon.png";
 });
+
+//open modal for project images
+
+const imageModal = document.querySelector('.image-modal');
+const openModal = document.getElementById('tt-image');
+const closeModal = document.querySelector('.close-modal');
+
+openModal.addEventListener('click', () => {
+    imageModal.style.display = "block";
+});
+
+closeModal.addEventListener('click', () => {
+    imageModal.style.display = "none";
+});
+
