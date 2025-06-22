@@ -107,6 +107,7 @@
 .hero-about-section {
     font-size: 16px;
     text-align: center;
+    padding: 10px;
 }
 .hero-about-section span {
     font-weight: 600;
